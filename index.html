@@ -6,16 +6,17 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
+	<div class="container">	
 
-		<nav class="main-nav">
+		<nav class="main-nav">		
 				<ul> 
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
-					<li><a href="#"><img src="img/logo.png" class="logo" alt="City of Sedona" width="138px" height="70px" ></a></li>
+					<li><a class="logo" ><img src="img/logo.png" class="logo" alt="City of Sedona" width="138px" height="70px" ></a></li>
 					<li><a href="#">Карта штата</a></li>   
-					<li><a href="#">Гостиницы</a></li>
+					<li><a href="#">Гостиницы</a></li>		
 				</ul>
+				
 		</nav>
 
 		<div class="landscape">
@@ -25,14 +26,14 @@
 		</div>
 
 		<div class="promo">
-			<h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего</h2>
-			<h3>Рассмотрим 5 причин, почему Седона круче чем Гранд Каньон</h3>
+			<h1>Седона - небольшой городок в Аризоне,<br>заслуживающий большего</h1>
+			<h2>Рассмотрим 5 причин, почему Седона круче чем Гранд Каньон</h2>
 		</div>
 
 		<main class="advantages">
-				<div class="advantages-first-block">
+				<div class="advantages-first-block clearfix">
 					<div class="advantage-item-left">
-						< mh3>Настоящий городок</h3>
+						<h3>Настоящий городок</h3>
 						<h4>№1</h4>
 						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
@@ -65,7 +66,7 @@
 					</ul>
 				</section>
 
-				<div class="advantages-second-block">
+				<div class="advantages-second-block clearfix">
 					<div class="advantage-item-left">
 						<img src="img/advantage-picture-2.jpg" alt="photo" width="800px" height="256px">
 					</div>
@@ -100,26 +101,32 @@
 		</main>
 
 		<div class="search">
-
+				<div class="search-title">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-				<button href="#">Поиск гостиницы в Седоне</button>
-
+				<button class="pop-up">Поиск гостиницы в Седоне</button>
+				</div>
 
 				<div class="search-block">
-					<form class="search-form" action="#" method="post"> 
-
-						<label for="check-in">Дата заезда</label>
-						<input type="text" value="24 Апреля 2017" id="check-in" name="check-in">
-
-						<label for="check-out">Дата выезда</label>
-						<input type="text" value="24 Апреля 2017" id="check-out" name="check-out">
-
-						<label for="adults">Взрослые</label>
-						<input type="number" name="adults" id="adults">
-
-						<label for="kids">Дети</label>
-						<input type="number" name="kids" id="kids">
+					<form action="#" method="post"> 
+						<div class="string">
+							<label for="check-in">Дата заезда:</label>
+							<input type="text" value="24 Апреля 2017" id="check-in" name="check-in" class="check-in">
+						</div>
+						<div class="string">
+							<label for="check-out">Дата выезда:</label>
+							<input type="text" value="24 Апреля 2017" id="check-out" name="check-out" class="check-out">
+						</div>
+						<div class="string-last">
+							<div class="string-left">
+								<label for="adults">Взрослые</label>
+								<input type="number" name="adults" id="adults">
+							</div>
+							<div class="string-right">
+								<label for="kids">Дети</label>
+								<input type="number" name="kids" id="kids">
+							</div>
+						</div>
 
 						<button>Найти</button>
 

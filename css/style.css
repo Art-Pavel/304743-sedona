@@ -4,9 +4,21 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
+	width:1200px;
 }
 
-h2 {
+.container {
+	width: 1200px;
+}
+
+.clearfix::after {
+	clear:both;
+	display: table;
+	content:"";
+}
+	
+
+h1 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -16,4 +28,237 @@ h3 {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
+}
+
+.main-nav ul {
+	font-size: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.main-nav li {
+	display: inline-block;
+	padding-top: 16px;
+	padding-bottom: 18px;
+	width: 239px;
+	margin: 0px;
+	font-size: 14px;
+	line-height: 26px;
+	text-align: center;
+	vertical-align: top;
+}
+.main-nav li:nth-child(3) {
+	width: 244px;
+	height: 56px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.main-nav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+}
+
+.main-nav {
+	min-height: 56px;
+}
+
+.header-landscape {
+	height: 352px;
+	width: 458px;
+	margin: 0 auto;
+	
+}
+.header-landscape img {
+	font-size: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.landscape {
+	background-image: url("../img/landscape-bottom-mask.png"), url("../img/landscape.jpg");
+	background-position: bottom, center;
+	background-repeat: no-repeat, no-repeat;
+	padding-top: 76px;
+	height: 432px;	
+}
+
+.promo {
+	min-height: 217px;
+	text-align: center;
+}
+
+.advantages > div {
+	outline: 1px solid black;
+	
+}
+
+.advantages-first-block .advantage-item-left {
+	float:left;
+	width: 400px;
+}
+
+.advantages-first-block .advantage-item-right {
+	float:right;
+	width: 800px;
+}
+
+.features ul{
+	min-height: 330px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 0px;
+}
+
+.features li {
+	display: inline-block;
+	width: 400px;
+	margin: 0px;
+	font-size: 14px;
+}
+
+.advantages-second-block .advantage-item-left {
+	float:left;
+	width: 800px;
+}
+
+.advantages-second-block .advantage-item-right {
+	float:left;
+	width: 400px;
+}
+
+.advantages-third-block ul {
+	min-height: 256px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 0px;
+}
+
+.advantages-third-block li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 400px;
+	font-size: 14px;
+}
+
+.search {
+	position: relative;
+	min-height: 290px;
+	text-align: center;
+}
+
+.search .pop-up {
+	display: block;
+	margin: 0 auto;
+	width: 568px;
+	background: #766357;
+	color: white;
+	min-height: 86px;	
+}
+
+.search-block {
+	position: absolute;
+	min-height: 400px;
+	width: 568px;
+}
+
+.map {
+	height: 595px;
+}
+
+footer {
+	min-height: 120px;
+}
+
+.footer-content {
+	width: 1056px; 
+	margin: 0 auto;
+	font-size: 0px;
+}
+
+.footer-content div {
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+}
+
+.footer-social {
+	width: 400px;
+	margin: 0 88px;
+}
+
+.footer-copyright,
+.footer-hashtag {
+	width: 240px;
+}
+
+
+
+
+.filter {
+	background: url("../img/filter-background.jpg");
+	min-height: 216px;
+	
+}
+form {
+	width: 1056px;
+	margin: 0 auto;
+}
+
+.infrostructure,
+.type-of-house {
+	width: 200px;
+	float: left; 
+	background: #ccc;
+}
+
+.infrostructure {
+	margin-right: 40px;
+}
+
+.type-of-house {
+	margin-right: 288px;
+}
+
+.price {
+	width: 328px;
+	float: right;
+	background: #ccc;
+}
+
+.filter-form label {
+	display: block;
+}
+
+.results {
+	width: 1056px;
+	margin: 0 auto;
+}
+
+.sort {
+	min-height: 87px;
+}
+
+.sort-left,
+.sort-right {
+	display: inline-block;
+}
+
+.sort-left span {
+	mrgin-left: 50px;
+}
+
+.search-result-item {
+	min-height: 150px;
+	padding-left: 165px;
+	position: relative;
+}
+
+.search-result-item img {
+	position: absolute;
+	top: 30px;
+	left: 0px;
 }

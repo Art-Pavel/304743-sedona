@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -17,8 +18,8 @@
 				</ul>
 		</nav>
 
-		<header class="search">
-				<form action="#" method="post">
+		<header class="filter clearfix">
+				<form action="#" method="post" class="filter-form">
 
 					<div class="infrostructure">
 						<h4>Инфраструктура</h4>
@@ -75,7 +76,7 @@
 				<div class="sort">
 					<div class="sort-left">
 						<b>Найдено: 3</b>
-						<h4>Сортировка</h4>
+						<span>Сортировка</span>
 						<a href="#">По цене</a>
 						<a href="#">По типу</a>
 						<a href="#">По рейтингу</a>
@@ -91,6 +92,7 @@
 
 
 					<div class="search-result-item">
+						
 						<img src="img/amara-resort-img.jpg" alt="Amara Resort photo">
 						<h2>Amara resorts & SPA</h2>
 						<P>Гостиница от 4000р.</P>
@@ -104,6 +106,7 @@
 							<span></span>
 							<span></span>
 						</div>
+						
 					</div>
 
 
@@ -143,22 +146,23 @@
 				</div>
 		</div>
 
-		<div class="footer">
+		<footer>
+				<div class="footer-content">
+					<div class="footer-hashtag">
+						<p>#Sedona</p>
+					</div>
 
-				<div class="footer-hashtag">
-					<p>#Sedona</p>
-				</div>
+					<div class="footer-social">
+						<a class="social-btn social-btn-twitter" href="#">Твиттер</a>
+						<a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
+						<a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+					</div>
 
-				<div class="footer-social">
-					<a class="social-btn social-btn-twitter" href="#">Твиттер</a>
-					<a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+					<div class="footer-copyright">
+						<p>Website by:<a class="copyright">html academy</a></p>
+					</div>
 				</div>
-
-				<div class="footer-copyright">
-					<p>Website by:<a class="copyright">html academy</a></p>
-				</div>
-		</div>
+		</footer>
 
 	</div>
 </body>
