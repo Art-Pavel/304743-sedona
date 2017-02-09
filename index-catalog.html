@@ -14,7 +14,7 @@
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#"><img src="img/logo.png" class="logo" alt="City of Sedona" width="138px" height="70px" ></a></li>
 					<li><a href="#">Карта штата</a></li>   
-					<li><a href="#">Гостиницы</a></li>
+					<li><a href="#" class="active" >Гостиницы</a></li>
 				</ul>
 		</nav>
 
@@ -23,11 +23,11 @@
 
 					<fieldset class="infrostructure">
 						<legend>Инфраструктура:</legend>
-						<input type="checkbox" name="pool" id="pool"><label for="pool" class="text">
+						<input type="checkbox" name="pool" id="pool" disabled checked><label for="pool" class="text">
 						Бассейн
 						</label>
 
-						<input type="checkbox" name="parking" id="parking"><label for="parking" class="text">
+						<input type="checkbox" name="parking" id="parking" disabled><label for="parking" class="text">
 						Парковка
 						</label>
 
@@ -54,19 +54,23 @@
 
 					<fieldset class="price">
 						<legend>Стоимость в сутки (Р):</legend>
-						<div class="slider">
-						<span class="bull bull-left"></span>
-						<span class="bull bull-right"></span>
+						
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 						</div>
-
-						<label class="slide-text">
-						<span>От </span><input type="text" id="from" name="from" placeholder="0">
-						</label>
-
-						<label class="slide-text">
-						<span>До </span><input type="text" id="to" name="to" placeholder="3000">
-						</label>
-						<button>Показать</button>
+						<div class="price-range">
+							<div class="scale">
+								<div class="bar">
+								</div>
+							</div>
+							<div class="range-toggle range-toggle-min">
+							</div>
+							<div class="range-toggle range-toggle-max">
+							</div>
+						</div>
+						<button class="price-btn" type="submit">Показать</button>
+						
 					</fieldset>
 		 		</form>
 		</header>
@@ -75,12 +79,12 @@
 				<div class="sort clearfix">
 						<b>Найдено: 3</b>
 						<span>Сортировка:</span>
-						<a href="#" class="sort-type">По цене</a>
-						<a href="#" class=" sort-type">По типу</a>
+						<a class="sort-type active">По цене</a>
+						<a href="#" class="sort-type">По типу</a>
 						<a href="#" class="sort-type">По рейтингу</a>
 						<div class="arrow-block">
 							<a href="#" class="arrow" title="Up"></a>
-							<a href="#" class="arrow" title="Down"></a>
+							<a href="#" class="arrow active" title="Down"></a>
 						</div>
 				</div>
 
@@ -100,12 +104,8 @@
 								</div>
 							</div>
 							<div class="stars">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<P>Рейтинг:8,5</P>
+								<img src="img/4X.png" width="89px" height="17px">
+								<span>Рейтинг: 8,5</span>
 							</div>	
 						</div>
 					</div>
@@ -125,13 +125,9 @@
 								</div>
 							</div>
 							<div class="stars">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<P>Рейтинг:8,9</P>
-							</div>
+								<img src="img/3X.png" width="65px" height="17px">
+								<span>Рейтинг: 8,9</span>
+							</div>	
 						</div>
 					</div>
 
@@ -141,24 +137,20 @@
 								<img src="img/villas-img.jpg" alt="Villas at poco Diablo photo" width="135px" height="90px">
 								<div class="description">
 									<h2>Villas at poco Diablo</h2>
-									<div class="price-type">
+									<div class="type-price">
 										<span>Аппартаменты</span>
 										<span>от 2000р.</span>
 									</div>
 									<div class="btns">
-										<a href="#" class="btn">Подробнее</a>
-										<a href="#" class="btn">Забронировать</a>
+										<a href="#" class="btn btn-more">Подробнее</a>
+										<a href="#" class="btn btn-book">Забронировать</a>
 									</div>
 								</div>
-								
+
 								<div class="stars">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<P>Рейтинг:9,2</P>
-								</div>
+								<img src="img/2X.png" width="42px" height="17px">
+								<span>Рейтинг: 9,2</span>
+							</div>	
 							</div>
 						</div>
 				</div>
@@ -167,7 +159,7 @@
 		<footer>
 				<div class="footer-content">
 					<div class="footer-hashtag">
-						<p>#Sedona</p>
+						<p>#VisitSedona</p>
 					</div>
 
 					<div class="footer-social">

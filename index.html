@@ -100,39 +100,37 @@
 				<div class="search-title">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-				<button class="search-btn">Поиск гостиницы в Седоне</button>
+				<button type="button" class="search-btn">Поиск гостиницы в Седоне</button>
 				</div>
 
 			
-					<form action="#" method="post" class="pop-up"> 
-						<div class="string">
-							<label for="check-in">Дата заезда:</label>
-							<input type="text" value="24 Апреля 2017" id="check-in" name="check-in" class="check-in">
-							<button type="button" class="calendar">
+				<form action="#" method="post" class="pop-up"> 
+					<div class="string">
+						<label for="check-in">Дата заезда:</label>
+						<input type="text" placeholder="24 Апреля 2017" id="check-in" name="check-in" class="check-in">
+						<button type="button" class="calendar">
+					</div>
+					<div class="string">
+						<label for="check-out">Дата выезда:</label>
+						<input type="text" placeholder="4 Июля 2017" id="check-out" name="check-out" class="check-out">
+						<button type="button" class="calendar"></button>
+					</div>
+					<div class="string-last">
+						<div class="half-string">
+							<label for="adults">Взрослые:</label>
+							<input type="text" name="adults" id="adults" placeholder="2">
+							<button type="button" class="plus"></button>
+							<button type="button" class="minus"></button>
 						</div>
-						<div class="string">
-							<label for="check-out">Дата выезда:</label>
-							<input type="text" value="24 Апреля 2017" id="check-out" name="check-out" class="check-out">
-							<button type="button" class="calendar"></button>
+						<div class="half-string">
+							<label for="kids">Дети:</label>
+							<input type="text" name="kids" id="kids" placeholder="0">
+							<button type="button" class="plus"></button>
+							<button type="button" class="minus"></button>
 						</div>
-						<div class="string-last">
-							<div class="half-string">
-								<label for="adults">Взрослые:</label>
-								<input type="number" name="adults" id="adults">
-								<button type="button" class="plus"></button>
-								<button type="button" class="minus"></button>
-							</div>
-							<div class="half-string">
-								<label for="kids">Дети:</label>
-								<input type="number" name="kids" id="kids">
-								<button type="button" class="plus"></button>
-								<button type="button" class="minus"></button>
-							</div>
-						</div>
-
-						<button>Найти</button>
-
-					</form>
+					</div>
+					<button type="submit" class="pop-up-btn">Найти</button>
+				</form>
 				
 		</div>
 
