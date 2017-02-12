@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +14,7 @@
 				<ul> 
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
-					<li><a href="#"><img src="img/logo.png" class="logo" alt="City of Sedona" width="138px" height="70px" ></a></li>
+					<li><a href="index.html"><img src="img/logo.png" class="logo" alt="City of Sedona" width="138px" height="70px" ></a></li>
 					<li><a href="#">Карта штата</a></li>   
 					<li><a href="#" class="active" >Гостиницы</a></li>
 				</ul>
@@ -23,11 +25,11 @@
 
 					<fieldset class="infrostructure">
 						<legend>Инфраструктура:</legend>
-						<input type="checkbox" name="pool" id="pool" disabled checked><label for="pool" class="text">
+						<input type="checkbox" name="pool" id="pool" checked><label for="pool" class="text">
 						Бассейн
 						</label>
 
-						<input type="checkbox" name="parking" id="parking" disabled><label for="parking" class="text">
+						<input type="checkbox" name="parking" id="parking" ><label for="parking" class="text">
 						Парковка
 						</label>
 
@@ -39,16 +41,16 @@
 					<fieldset class="type-of-house">
 						<legend>Тип жилья:</legend>
 
-						<input type="checkbox" name="guesthouse" id="guesthouse"><label for="guesthouse" class="text">
+						<input type="checkbox" name="guesthouse" id="guesthouse" checked><label for="guesthouse" class="text">
 						Гостиница
 						</label>
 
-						<input type="checkbox" name="motel" id="motel"><label for="motel" class="text">
+						<input type="checkbox" name="motel" id="motel" checked><label for="motel" class="text">
 						Мотель
 						</label>
 
-						<input type="checkbox" name="appartments" id="appartments"><label for="appartments" class="text">
-						Аппартаменты
+						<input type="checkbox" name="appartments" id="appartments" checked><label for="appartments" class="text">
+						Апартаменты
 						</label>
 					</fieldset>
 
@@ -91,9 +93,9 @@
 				<div class="search-results-items">
 					<div class="search-result-item">
 						<div class="result-content">
-							<img src="img/amara-resort-img.jpg" alt="Amara Resort photo" width="135px" height="90px">
+							<a href="#" class="img"><img src="img/amara-resort-img.jpg" alt="Amara Resort photo" width="135px" height="90px"></a>
 							<div class="description">
-								<h2>Amara resorts & SPA</h2>
+								<a href="#" class="hotel-name">Amara resort & SPA</a>
 								<div class="type-price">
 									<span>Гостиница</span>
 									<span>от 4000 р.</span>
@@ -112,9 +114,9 @@
 
 					<div class="search-result-item">
 						<div class="result-content">
-							<img src="img/desert-quail-img.jpg" alt="Desert quail inn photo" width="135px" height="90px">
+							<a href="#" class="img"><img src="img/desert-quail-img.jpg" alt="Desert quail inn photo" width="135px" height="90px"></a>
 							<div class="description">
-								<h2>Desert quail inn</h2>
+								<a href="#" class="hotel-name">Desert quail inn</a>
 								<div class="type-price">
 									<span>Мотель</span>
 									<span>от 3000 р.</span>
@@ -134,11 +136,11 @@
 
 					<div class="search-result-item">
 						<div class="result-content">
-								<img src="img/villas-img.jpg" alt="Villas at poco Diablo photo" width="135px" height="90px">
+								<a href="#" class="img"><img src="img/villas-img.jpg" alt="Villas at poco Diablo photo" width="135px" height="90px"></a>
 								<div class="description">
-									<h2>Villas at poco Diablo</h2>
+									<a href="#" class="hotel-name">Villas at poco Diablo</a>
 									<div class="type-price">
-										<span>Аппартаменты</span>
+										<span>Апартаменты</span>
 										<span>от 2000р.</span>
 									</div>
 									<div class="btns">
@@ -169,7 +171,7 @@
 					</div>
 
 					<<div class="footer-copyright">
-						<span>Website by:</span><a class="copyright-btn" title="html academy" href="#"></a>
+						<span>Website by</span><a class="copyright-btn" title="html academy" href="#"></a>
 					</div>
 				</div>
 		</footer>
