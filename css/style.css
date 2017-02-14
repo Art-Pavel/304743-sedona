@@ -19,36 +19,60 @@ body {
 	display: table;
 	content:"";
 }
+
+.main-nav {
+	background-color: #ffffff;
+}
 	
 .main-nav ul {
 	font-size: 0px;
 	padding: 0px;
 	margin: 0px;
-	background-color: #ffffff;
 }
 
 .main-nav li {
 	display: inline-block;
 	padding-top: 13px;
 	padding-bottom: 16px;
-	width: 239px;
-	margin: 0px;
 	font-size: 14px;
 	line-height: 26px;
-	text-align: center;
 	vertical-align: top;
 }
-.main-nav li:nth-child(3) {
+
+.main-nav .left-side {
+	float: left;
+	text-align: left;
+	width: 478px;
+}
+
+.left-side li {
+	width: 166px;
+	margin-left: 73px;
+}
+
+.main-nav .right-side {
+	float: right;
+	text-align: right;
+	width: 478px;
+}
+
+.right-side li:last-child {
+	width: 166px;
+	margin-right: 73px;
+}
+
+.right-side li:first-child {
+	margin-right: 77px;
+	width: 162px;
+}
+
+.main-nav .logo {
 	width: 244px;
 	height: 57px;
 	padding: 0px;
 	margin: 0px;
 	font-size: 0px;
-}
-
-.main-nav li:last-child {
-	width: 150px;
-	margin-left: 52px;
+	text-align: center;
 }
 
 .main-nav a {
@@ -292,11 +316,13 @@ li.advantage-item-text p {
 	width: 568px;
 	background: #766357;
 	color: white;
-	min-height: 85px;	
+	padding-top: 30px;
+	padding-bottom: 30px;	
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
 	border: 0px;
 	font-family:  'PT Sans', 'Arial', sans-serif;
 }
@@ -308,6 +334,29 @@ li.advantage-item-text p {
 	width: 568px;
 	padding-top: 55px;
 	background: #ffffff;
+	display: none;
+}
+
+@keyframes bounce {
+	0% { transform: translateY( -45px);  }
+	70% {transform: translateY( 40px);	 }
+	90% { transform: translateY( -10px); }
+	100% {transform: translateY( 0px);   }
+}
+
+.pop-up-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+@keyframes shake {
+	0%, 100%	{transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.pop-up-error {
+	animation: shake 0.6s;
 }
 
 .pop-up input {
@@ -822,13 +871,11 @@ input[disabled] + label::before {
 	display: block;
 	margin: 0 auto;
 	padding: 6px 33px;
-
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
 	text-transform: uppercase;
 	font-family: 'PT Sans', 'Arial', sans-serif;
-
 	background: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
