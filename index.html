@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
-</head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+	</head>
 <body>
 	<div class="container">	
-
 		<nav class="main-nav clearfix">		
 			<ul class="left-side">
 				<li><a href="#">Информация</a></li>
@@ -20,7 +19,6 @@
 				<li><a href="index-catalog.html">Гостиницы</a></li>
 			</ul>
 			<a class="logo" ><img src="img/logo.png" alt="City of Sedona" width="138" height="70" ></a>
-				
 		</nav>
 
 		<div class="landscape">
@@ -100,63 +98,61 @@
 
 		<div class="search">
 			<div class="search-title">
-			<h2>Заинтересовались?</h2>
+				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-				<button class="search-btn">Поиск гостиницы в Седоне</button>
+				<a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
 			</div>
 
 			
 			<form action="#" method="post" class="pop-up pop-up-show"> 
 				<div class="string">
 					<label for="check-in">Дата заезда:</label>
-					<input type="text" placeholder="24 Апреля 2017" id="check-in" name="check-in" class="check-in-date">
+					<input type="text" value="24 Апреля 2017" id="check-in" name="check-in" class="check-in-date">
 					<button type="button" class="calendar"></button>
 				</div>
 				<div class="string">
 					<label for="check-out">Дата выезда:</label>
-					<input type="text" placeholder="4 Июля 2017" id="check-out" name="check-out" class="check-out-date">
+					<input type="text" value="4 Июля 2017" id="check-out" name="check-out" class="check-out-date">
 					<button type="button" class="calendar"></button>
 				</div>
 				<div class="string-last">
 					<div class="half-string">
-						<label for="adults">Взрослые:</label>
-						<input type="text" name="adults" id="adults" placeholder="2">
+					<label for="adults">Взрослые:</label>
+						<input type="text" name="adults" id="adults" value="2">
 						<button type="button" class="plus"></button>
 						<button type="button" class="minus"></button>
 					</div>
 					<div class="half-string">
 						<label for="kids">Дети:</label>
-						<input type="text" name="kids" id="kids" placeholder="0">
+						<input type="text" name="kids" id="kids" value="0">
 						<button type="button" class="plus"></button>
 						<button type="button" class="minus"></button>
 					</div>
 				</div>
 				<button type="submit" class="pop-up-btn">Найти</button>
-			</form>
-				
+			</form>	
 		</div>
 
 		<div class="map">
 		</div>
-			<footer class="main-footer">
-				<div class="footer-content">
+		<footer class="main-footer">
+			<div class="footer-content">
 
-					<div class="footer-hashtag">
-						<p>#VisitSedona</p>
-					</div>
-
-					<div class="footer-social">
-						<a class="social-btn social-btn-twitter" href="#" title="Твиттер"></a>
-						<a class="social-btn social-btn-facebook" href="#" title="Фейсбук"></a>
-						<a class="social-btn social-btn-youtube" href="#" title="Ютуб"></a>
-					</div>
-
-					<div class="footer-copyright">
-						<span>Website by</span><a class="copyright-btn" title="html academy" href="#"></a>
-					</div>
-
+				<div class="footer-hashtag">
+					<p>#VisitSedona</p>
 				</div>
-			</footer>
+
+				<div class="footer-social">
+					<a class="social-btn social-btn-twitter" href="#" title="Твиттер"></a>
+					<a class="social-btn social-btn-facebook" href="#" title="Фейсбук"></a>
+					<a class="social-btn social-btn-youtube" href="#" title="Ютуб"></a>
+				</div>
+
+				<div class="footer-copyright">
+					<span>Website by</span><a class="copyright-btn" title="html academy" href="#"></a>
+				</div>
+			</div>
+		</footer>
 		
 	</div>
 	<script src="js/script.min.js"></script>
